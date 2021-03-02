@@ -74,13 +74,17 @@ body {
     right: 20px;
   }
 
+  .navbar {
+    height: 15vh;
+  }
+
   .navbar .nav-links {
     position: absolute;
     top: 100vh;
     background-color: #00bbf9;
     width: 100%;
     right: 0px;
-    height: 90vh;
+    height: 86%;
 
     flex-direction: column;
     justify-content: flex-start;
@@ -89,7 +93,7 @@ body {
     transform: translateY(0%);
   }
   .navbar .nav-links li {
-    margin: 80px;
+    margin: 11%;
   }
   .navbar .nav-links {
     visibility: hidden;
@@ -111,8 +115,8 @@ body {
   }
 
   .navbar .nav-links li a:hover {
-    background-color: #9b5de5;
-    color: #fee440;
+    background-color: #00bbf9;
+    color: #9b5de5;
   }
 
   .navbar .navtog.active div {
