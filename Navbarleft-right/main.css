@@ -51,7 +51,7 @@ body {
   width: 25px;
   height: 5px;
   margin: 5px;
-  background-color: #9b5de5;
+  background-color: #00bbf9;
 }
 
 .navbar .navtog {
@@ -76,27 +76,55 @@ body {
 
   .navbar .nav-links {
     position: absolute;
-    top: 100px;
+    top: 100vh;
     background-color: #00bbf9;
-    width: 50%;
+    width: 100%;
     right: 0px;
-    height: 100vh;
-    opacity: 70%;
+    height: 90vh;
+
     flex-direction: column;
     justify-content: flex-start;
     font-size: 30px;
     text-align: center;
-    transform: translateX(0%);
-    left: -50%;
+    transform: translateY(0%);
   }
   .navbar .nav-links li {
     margin: 80px;
   }
+  .navbar .nav-links {
+    visibility: hidden;
+  }
 
   .navbar .nav-links.active {
-    display: block;
+    visibility: visible;
     display: flex;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
+    transform: translateY(-100%);
+    transition: 0.2s ease-in;
+  }
+  .navbar.active {
+    background: #00bbf9;
+    color: #9b5de5;
+  }
+
+  .navbar .nav-links.active {
+    animation: fadeIn ease 1s;
+  }
+
+  .navbar .nav-links li a:hover {
+    background-color: #9b5de5;
+    color: #fee440;
+  }
+
+  .navbar .navtog.active div {
+    background-color: #9b5de5;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
