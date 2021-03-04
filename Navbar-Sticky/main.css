@@ -17,6 +17,7 @@ body {
   font-weight: 400;
   font-style: normal;
   color: #a8201a;
+  z-index: 1;
 }
 
 .navbar.sticky {
@@ -73,6 +74,21 @@ body {
   max-width: 100%;
   background-attachment: fixed;
   background-position: center center;
+  color:#a8201a;
+  font-family: apotek, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  font-size: 300px;
+  z-index: -1;
+
+}
+
+#img h2 {
+    mix-blend-mode: overlay;
 }
 
 .container {
