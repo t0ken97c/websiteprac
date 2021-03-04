@@ -1,59 +1,88 @@
-*{
-    margin: 0px;
-    padding:0px;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #34312d;
 }
 
 .navbar {
-    text-transform: uppercase;
-    /* background: #EC9A29; */
-    display: flex;  
-    height: 10vh;
-    align-items: center;
-    font-family: apotek,sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  text-transform: uppercase;
+  background: #fff;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  font-family: apotek, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #a8201a;
+}
+
+.navbar.sticky {
+  background: #34312d;
+  position: sticky;
+  top: -15px;
+  padding-top: 10px;
+  animation: FadeIN 0.2s;
+  color: #f4ac45;
+}
+
+@keyframes FadeIN {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar.sticky .nav-links li a {
+  color: #f4ac45;
 }
 
 .navbar h2 {
-    position: absolute;
-    left: 20px;
-    font-size: 50px;
-    color: #A8201A;
+  position: absolute;
+  left: 20px;
+  font-size: 50px;
 }
 
 .navbar .nav-links {
-    justify-content: space-around;
-    display: flex;
-    width: 50%;
-    position: absolute; 
-    right: 20px;
+  justify-content: space-around;
+  display: flex;
+  width: 50%;
+  position: absolute;
+  right: 20px;
 }
 
 .navbar .nav-links li {
-    
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navbar .nav-links li a {
-   text-decoration: none; 
-   color:#A8201A;
-   font-size: 25px;
+  text-decoration: none;
+  color: #a8201a;
+  font-size: 25px;
 }
 
-.bimg {
-    
-    background-image: url(https://www.flickr.com/photos/spacex/50242057682/);
+#img {
+  top: 0px;
+  background-image: url("/Navbar-Sticky/space.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .container {
-    background: #DAD2D8;
-    top: 100vh;
-    margin: 20px;
-    padding: 20px;
-    font-family: apotek,sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
+  background: #dad2d8;
 
+  margin: 20px;
+  padding: 40px;
+  font-family: apotek, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
 }
